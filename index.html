@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S. | Portfolio</title>
+
+    <!-- Tailwind CSS (makes styling easy) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-zinc-950 text-white">
+    <!-- ==================== NAVBAR ==================== -->
+    <nav
+      class="fixed top-0 left-0 right-0 bg-zinc-900 border-b border-zinc-800 z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div
+            class="w-9 h-9 bg-violet-600 rounded-xl flex items-center justify-center text-xl font-bold"
+          >
+            S
+          </div>
+          <span class="text-2xl font-semibold">Farih</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#home" class="hover:text-violet-400 transition">Home</a>
+          <a href="#about" class="hover:text-violet-400 transition">About</a>
+          <a href="#skills" class="hover:text-violet-400 transition">Skills</a>
+          <a href="#projects" class="hover:text-violet-400 transition"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-violet-400 transition"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-4">
+          <a
+            href="https://github.com/Farih-S"
+            target="_blank"
+            class="hover:text-violet-400"
+          >
+            <i class="fa-brands fa-github text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/s-farih-a47a4a3b6/"
+            target="_blank"
+            class="hover:text-violet-400"
+          >
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="bg-white text-black px-6 py-3 rounded-2xl font-medium flex items-center gap-2 hover:bg-violet-400 hover:text-white transition"
+          >
+            <i class="fa-solid fa-download"></i>
+            Resume
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-btn" class="md:hidden text-3xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 px-6 py-8"
+      >
+        <div class="flex flex-col gap-6 text-lg">
+          <a href="#home" class="mobile-link">Home</a>
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#skills" class="mobile-link">Skills</a>
+          <a href="#projects" class="mobile-link">Projects</a>
+          <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h1 class="text-6xl md:text-7xl font-bold leading-tight">
+            Hi, I'm <span class="text-violet-400">Farih</span>
+          </h1>
+          <p class="text-2xl text-zinc-400 mt-4">
+            Full-Stack Developer &amp; UI Designer
+          </p>
+          <p class="text-zinc-400 mt-6 max-w-md">
+            I build clean, fast, and beautiful websites and web apps. Based in
+            India.
+          </p>
+
+          <div class="mt-10 flex gap-4">
+            <a
+              href="#projects"
+              class="bg-violet-600 hover:bg-violet-500 px-8 py-4 rounded-2xl font-medium transition"
+            >
+              See My Work
+            </a>
+            <a
+              href="#contact"
+              class="border border-zinc-700 hover:border-zinc-400 px-8 py-4 rounded-2xl font-medium transition"
+            >
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="flex justify-center">
+          <img
+            src="Profile_pic.jpg"
+            alt="Your Photo"
+            class="w-80 h-80 rounded-3xl object-cover shadow-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="py-24 bg-zinc-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-8">About Me</h2>
+        <div class="max-w-3xl text-zinc-400 leading-relaxed text-lg">
+          <p class="mb-6">
+            I'm a passionate developer who loves creating digital experiences
+            that are both beautiful and functional.
+          </p>
+          <p>
+            I started coding when I was 16 and haven't stopped since. I enjoy
+            turning ideas into real products using modern tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12">Skills</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">⚛️</div>
+            <p class="font-medium">React / Next.js</p>
+          </div>
+          <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">💻</div>
+            <p class="font-medium">HTML, CSS, JavaScript</p>
+          </div>
+          <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">🎨</div>
+            <p class="font-medium">Tailwind CSS</p>
+          </div>
+          <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">🗄️</div>
+            <p class="font-medium">Node.js / MongoDB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="py-24 bg-zinc-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12">Projects</h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Project 1 -->
+          <div class="bg-zinc-800 rounded-3xl overflow-hidden">
+            <img src="Vago_logo.jpg" class="w-full h-64 object-cover" />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold">Project One</h3>
+              <p class="text-zinc-400 mt-3">
+                A travel planner app that helps users organize their trips and
+                find the best deals on flights and hotels.
+              </p>
+              <div class="flex gap-3 mt-6">
+                <a href="#" class="text-sm bg-zinc-700 px-5 py-2 rounded-2xl"
+                  >Live Demo</a
+                >
+                <a href="#" class="text-sm bg-zinc-700 px-5 py-2 rounded-2xl"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-zinc-800 rounded-3xl overflow-hidden">
+            <img
+              src="https://picsum.photos/id/180/800/500"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold">Project Two</h3>
+              <p class="text-zinc-400 mt-3">
+                E-commerce website with cart and payment integration.
+              </p>
+              <div class="flex gap-3 mt-6">
+                <a href="#" class="text-sm bg-zinc-700 px-5 py-2 rounded-2xl"
+                  >Live Demo</a
+                >
+                <a href="#" class="text-sm bg-zinc-700 px-5 py-2 rounded-2xl"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="py-24">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Let's Work Together</h2>
+        <p class="text-zinc-400 max-w-md mx-auto">
+          Have a project in mind? Feel free to reach out!
+        </p>
+
+        <form id="contact-form" class="max-w-lg mx-auto mt-12 space-y-6">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-violet-400"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-violet-400"
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="6"
+            class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-8 py-6 focus:outline-none focus:border-violet-400"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full bg-violet-600 hover:bg-violet-500 py-6 rounded-3xl font-medium text-lg transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 text-center text-zinc-500">
+      <p>© 2026 S. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
